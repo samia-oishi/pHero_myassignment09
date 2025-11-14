@@ -1,0 +1,74 @@
+[
+  {
+    "serviceId": 1,
+    "serviceName": "Pet House Cleaning",
+    "providerName": "PawCare Studio",
+    "providerEmail": "info@pawcare.com",
+    "price": 50,
+    "rating": 4.8,
+    "slotsAvailable": 5,
+    "description": "Our winter Pet House Cleaning service ensures a spotless, warm, and hygienic environment for your pets during the cold season. We thoroughly clean your and its pet houses, bedding, crates, and litter areas using pet-safe disinfectants and warm-water treatments to eliminate odors, bacteria, dust, and allergens. This service helps prevent winter-related infections and keeps your pet cozy and comfortable. Ideal for households that want to maintain a clean and healthy space for their furry friends throughout colder months.",
+    "image": "https://i.ibb.co.com/hRMmGwsS/clean.jpg",
+    "category": "Cleaning"
+  },
+  {
+    "serviceId": 2,
+    "serviceName": "Winter Clothing & Fitting",
+    "providerName": "PawCare Studio",
+    "providerEmail": "info@pawcare.com",
+    "price": 30,
+    "rating": 4.6,
+    "slotsAvailable": 3,
+    "description": "This Winter Clothing & Fitting service offers custom measurement sessions and outfit recommendations tailored to your pet’s size, breed, and winter needs. We provide professionally fitted warm jackets, sweaters, boots, and cozy accessories designed to protect your pet from harsh winds and low temperatures. Each fitting session ensures maximum comfort and mobility so your pet can enjoy the winter outdoors safely. The service includes style consultations, fabric recommendations, and adjustments for a perfect winter-ready look.",
+    "image": "https://i.ibb.co.com/d4NqdXfx/clothfitting.jpg",
+    "category": "Clothing"
+  },
+  {
+    "serviceId": 3,
+    "serviceName": "Winter Daycare Service",
+    "providerName": "PawCare Studio",
+    "providerEmail": "info@pawcare.com",
+    "price": 20,
+    "rating": 4.9,
+    "slotsAvailable": 7,
+    "description": "Our Winter Daycare Service provides a safe, warm, and fully supervised indoor environment where pets can spend their day active and happy. With temperature-controlled playrooms, soft resting areas, and guided play sessions, your pet stays entertained even during freezing weather. We offer structured activities, socialization opportunities, feeding schedules, gentle exercise routines, and nap times. This service is ideal for pet owners with busy winter schedules who want their pets to stay warm, healthy, and engaged throughout the day.",
+    "image": "https://i.ibb.co.com/Hf8XP6yn/daycare.jpg",
+    "category": "Daycare"
+  },
+  {
+    "serviceId": 4,
+    "serviceName": "Winter Grooming Package",
+    "providerName": "PawCare Studio",
+    "providerEmail": "info@pawcare.com",
+    "price": 30,
+    "rating": 4.7,
+    "slotsAvailable": 6,
+    "description": "Our Winter Grooming Package is specially designed to maintain your pet’s coat, skin, and overall hygiene during the colder months. This includes a warm bath with moisturizing shampoos, coat conditioning, gentle fur trimming, and paw pad protection to prevent cracking from cold surfaces. We also provide nail trimming, ear cleaning, and de-shedding treatments that help reduce winter coat buildup. Your pet leaves the session refreshed, warm, and well-groomed, making this an essential winter wellness routine.",
+    "image": "https://i.ibb.co.com/gZmv7KvS/grooming.jpg",
+    "category": "Grooming"
+  },
+  {
+    "serviceId": 5,
+    "serviceName": "Senior Pet Winter Care",
+    "providerName": "PawCare Studio",
+    "providerEmail": "info@pawcare.com",
+    "price": 65,
+    "rating": 4.85,
+    "slotsAvailable": 4,
+    "description": "Senior Pet Winter Care focuses on providing enhanced comfort, safety, and health monitoring for older pets during winter. This service includes warm bedding arrangements, mobility assistance, gentle stretching exercises, slow-paced indoor walks, and temperature monitoring. We also keep an eye on arthritis symptoms, breathing difficulties, and appetite changes that may worsen in cold weather. With additional cuddle time and soothing care routines, this service ensures that aging pets stay comfortable, emotionally supported, and well-protected from winter chills.",
+    "image": "https://i.ibb.co.com/KcYFQHQD/seniorpet-Care.jpg",
+    "category": "Senior Care"
+  },
+  {
+    "serviceId": 6,
+    "serviceName": "Veterinary Health Checkup",
+    "providerName": "PawCare Studio",
+    "providerEmail": "info@pawcare.com",
+    "price": 50,
+    "rating": 5.0,
+    "slotsAvailable": 2,
+    "description": "Our comprehensive Veterinary Health Checkup is designed to ensure your pet remains healthy throughout the winter season, when many illnesses tend to appear or worsen. The checkup includes a full physical examination, temperature and respiratory checks, skin and coat assessment, dental evaluation, joint and mobility analysis, and nutrition guidance. The veterinarian focuses on detecting early signs of winter-related concerns such as colds, dehydration, dry skin, and weakened immunity. This service is ideal for maintaining your pet’s long-term wellness during colder months.",
+    "image": "https://i.ibb.co.com/3qjTRXg/vet.jpg",
+    "category": "Veterinary"
+  }
+]
