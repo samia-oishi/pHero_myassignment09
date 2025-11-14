@@ -43,7 +43,7 @@ const Links = () => {
 
 export const Navbar = () => {
   return (
-    <div className="navbar bg-[#152036] text-white shadow-sm px-10">
+    <div className="navbar text-white px-10">
       {/* LEFT SECTION */}
       <div className="navbar-start">
         {/* MOBILE DROPDOWN */}
@@ -74,9 +74,13 @@ export const Navbar = () => {
         </div>
 
         {/* LOGO */}
-        <div className="flex gap-2 items-center">
-          <img src={logo} alt="logo" className="w-10 h-10 rounded-t-full" />
-          <p className="text-2xl text-[#EBECF1] font-mono font-thin">PetCare</p>
+        <div>
+          <NavLink to="/" className="flex gap-2 items-center">
+            <img src={logo} alt="logo" className="w-5 h-5 rounded-t-full" />
+            <p className="text-2xl text-[#EBECF1] font-mono font-thin">
+              PetCare
+            </p>
+          </NavLink>
         </div>
       </div>
 
@@ -89,10 +93,16 @@ export const Navbar = () => {
 
       {/* RIGHT SECTION */}
       <div className="navbar-end gap-2">
-        <NavLink to="/signup" className="btn bg-[#EBECF1] text-[#152036]">
+        <NavLink
+          to="/signup"
+          className="btn h-7 bg-[#ebecf1] text-[#152036] font-medium"
+        >
           Sign Up
         </NavLink>
-        <NavLink to="/signin" className="btn bg-[#EBECF1] text-[#152036]">
+        <NavLink
+          to="/signin"
+          className="btn h-7 bg-[#EBECF1] text-[#152036] font-medium"
+        >
           Sign In
         </NavLink>
       </div>
