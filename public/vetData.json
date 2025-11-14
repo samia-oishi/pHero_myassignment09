@@ -1,0 +1,44 @@
+[
+  {
+    "vetId": 1,
+    "name": "Dr. Amelia Hart",
+    "rating": 4.9,
+    "expertise": "General Veterinary Care, Winter Health, Skin & Coat Treatment",
+    "image": "https://i.ibb.co.com/6Rz74TyV/w1.jpg"
+  },
+  {
+    "vetId": 2,
+    "name": "Dr. Leo Winters",
+    "rating": 4.7,
+    "expertise": "Cold-Weather Illness Prevention, Respiratory Care",
+    "image": "https://i.ibb.co.com/4RwC0bjS/m1.jpg"
+  },
+  {
+    "vetId": 3,
+    "name": "Dr. Sophia Bennett",
+    "rating": 5.0,
+    "expertise": "Senior Pet Care, Arthritis & Mobility Support",
+    "image": "https://i.ibb.co.com/Q7cV7QL1/w2.jpg"
+  },
+  {
+    "vetId": 4,
+    "name": "Dr. Ethan Kumar",
+    "rating": 4.8,
+    "expertise": "Emergency Care, Winter Allergies, First Aid",
+    "image": "https://i.ibb.co.com/qMNHFW70/m2.jpg"
+  },
+  {
+    "vetId": 5,
+    "name": "Dr. Mia Alcott",
+    "rating": 4.6,
+    "expertise": "Puppy & Kitten Winter Wellness, Nutrition",
+    "image": "https://i.ibb.co.com/Q2rgYzk/w3.png"
+  },
+  {
+    "vetId": 6,
+    "name": "Dr. Noah Sterling",
+    "rating": 4.85,
+    "expertise": "Vaccinations, Seasonal Illness Prevention",
+    "image": "https://i.ibb.co.com/r2qz0P3q/m3.jpg"
+  }
+]

@@ -11,6 +11,7 @@ import { MyProfile } from "./pages/MyProfile.jsx";
 import { ServiceDetails } from "./pages/ServiceDetails.jsx";
 import { SignUp } from "./pages/SignUp.jsx";
 import { SignIn } from "./pages/SignIn.jsx";
+import "aos/dist/aos.css";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
         path: "/",
         index: true,
         element: <Home />,
+        loader: () => fetch("/data.json"),
       },
       {
         path: "/services",
