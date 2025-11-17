@@ -43,6 +43,16 @@ const router = createBrowserRouter([
       {
         path: "/services",
         element: <Services />,
+        loader: async () => {
+          const res = await fetch("/data.json");
+          if (!res.ok) {
+            throw new Response("Failed to load services", {
+              status: res.status,
+            });
+          }
+          const servdata = await res.json();
+          return servdata;
+        },
       },
       {
         path: "/myprofile",

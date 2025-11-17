@@ -95,13 +95,13 @@ export const Navbar = () => {
       <div className="navbar-end gap-2">
         <NavLink
           to="/signup"
-          className="btn h-7 bg-[#ebecf1] text-[#152036] font-medium"
+          className="btn h-7 bg-amber-400 text-[#152036] font-medium"
         >
           Sign Up
         </NavLink>
         <NavLink
           to="/signin"
-          className="btn h-7 bg-[#EBECF1] text-[#152036] font-medium"
+          className="btn h-7 bg-green-400 text-[#152036] font-medium"
         >
           Sign In
         </NavLink>
