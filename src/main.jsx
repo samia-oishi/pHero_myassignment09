@@ -22,7 +22,23 @@ const router = createBrowserRouter([
         path: "/",
         index: true,
         element: <Home />,
-        loader: () => fetch("/data.json"),
+        loader: async () => {
+          const [servicesRes, vetsRes] = await Promise.all([
+            fetch("/data.json"),
+            fetch("/vetData.json"),
+          ]);
+
+          if (!servicesRes.ok || !vetsRes.ok) {
+            throw new Response("Failed to load data", { status: 500 });
+          }
+
+          const [servicedata, vetdata] = await Promise.all([
+            servicesRes.json(),
+            vetsRes.json(),
+          ]);
+
+          return { servicedata, vetdata };
+        },
       },
       {
         path: "/services",

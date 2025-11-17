@@ -4,10 +4,10 @@ import OurServices from "../components/OurServices";
 import { useLoaderData } from "react-router";
 import { Tips } from "../components/Tips";
 import AOS from "aos";
-import { Vet } from "../components/Vet";
+import Vet from "../components/Vet";
 
 export const Home = () => {
-  const servicedata = useLoaderData();
+  const { servicedata, vetdata } = useLoaderData();
 
   useEffect(() => {
     AOS.init({
@@ -26,7 +26,7 @@ export const Home = () => {
       <Hero></Hero>
       <OurServices servicedata={servicedata}></OurServices>
       <Tips></Tips>
-      <Vet></Vet>
+      <Vet vetdata={vetdata}></Vet>
     </>
   );
 };
