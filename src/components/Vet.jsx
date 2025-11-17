@@ -13,7 +13,7 @@ const Vet = ({ vetdata }) => {
           {vetdata.map((data, index) => (
             <div
               key={index}
-              className="card bg-green-100 text-black w-72 h-70 shadow-sm"
+              className="card bg-orange-100 text-black w-72 h-70 shadow-sm"
             >
               <figure className="h-60 object-cover">
                 <img src={data.image} alt="Shoes" />

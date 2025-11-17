@@ -5,6 +5,7 @@ import { useLoaderData } from "react-router";
 import { Tips } from "../components/Tips";
 import AOS from "aos";
 import Vet from "../components/Vet";
+import { WhyUS } from "../components/WhyUS";
 
 export const Home = () => {
   const { servicedata, vetdata } = useLoaderData();
@@ -27,6 +28,7 @@ export const Home = () => {
       <OurServices servicedata={servicedata}></OurServices>
       <Tips></Tips>
       <Vet vetdata={vetdata}></Vet>
+      <WhyUS></WhyUS>
     </>
   );
 };
