@@ -109,7 +109,7 @@ export const Services = () => {
                   </div>
                 </div>
                 <NavLink
-                  to="/servicedetails"
+                  to={`/servicedetails/${data.serviceId ?? index}`}
                   className="btn h-7 text-[#EBECF1] bg-[#152036] font-medium border-0 "
                 >
                   View Details

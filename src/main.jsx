@@ -59,7 +59,12 @@ const router = createBrowserRouter([
         element: <MyProfile />,
       },
       {
-        path: "/servicedetails",
+        path: "/servicedetails/:id",
+        loader: async ({ params }) => {
+          const res = await fetch("/data.json");
+          const allserv = await res.json();
+          return { allserv, id: params.id };
+        },
         element: <ServiceDetails />,
       },
       {
