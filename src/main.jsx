@@ -5,7 +5,7 @@ import App from "./App.jsx";
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import { Root } from "./layout/Root.jsx";
-import { Home } from "./pages/home.jsx";
+import { Home } from "./pages/Home.jsx";
 import { Services } from "./pages/Services.jsx";
 import { MyProfile } from "./pages/MyProfile.jsx";
 import { ServiceDetails } from "./pages/ServiceDetails.jsx";
