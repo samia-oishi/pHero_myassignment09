@@ -4,7 +4,6 @@ import { NavLink, useLoaderData } from "react-router";
 export const Services = () => {
   const servdata = useLoaderData();
 
-  // normalize loader result to an array safely
   const servlist = Array.isArray(servdata)
     ? servdata
     : Array.isArray(servdata?.services)
@@ -15,9 +14,8 @@ export const Services = () => {
   const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
-    // keep displayed list in sync with loader updates
     setservice(servlist);
-  }, [servdata]); // keep dependency on servdata so it resets when loader changes
+  }, [servdata]);
 
   const handleSearch = (e) => {
     const query = e.target.value.toLowerCase();
@@ -29,7 +27,6 @@ export const Services = () => {
     }
 
     const filtered = servlist.filter((app) => {
-      // check serviceName first (your data), fallback to title if present
       const name = (app?.serviceName || app?.title || "")
         .toString()
         .toLowerCase();
@@ -55,8 +52,8 @@ export const Services = () => {
         </p>
       </div>
 
-      <div className="flex justify-between items-center mx-10 mt-8 mb-5">
-        <p className="text-sm font-semibold text-[#152036] bg-pink-400 rounded shadow-sm p-2">
+      <div className="flex justify-between items-center mx-10 mt-8 mb-5 max-sm:flex-col-reverse max-md:flex-col-reverse">
+        <p className="text-sm font-semibold text-[#152036] bg-pink-400 rounded shadow-sm p-2 max-sm:mt-2 max-md:mt-2">
           Services Found ({service.length})
         </p>
         <label className="input input-bordered flex items-center gap-2 bg-white outline-0 shadow-sm text-black">
@@ -86,11 +83,11 @@ export const Services = () => {
         </label>
       </div>
 
-      <div className=" gap-5 grid grid-cols-3 mx-20 my-10">
+      <div className=" gap-5 grid grid-cols-3 mx-20 my-10 max-sm:block max-sm:m-10 max-md:block max-md:m-10">
         {service.map((data, index) => (
           <div
             key={index}
-            className="card bg-white text-black w-90 h-80 shadow-sm"
+            className="card bg-white text-black w-90 h-80 shadow-sm max-sm:mb-5 max-md:mb-5"
           >
             <figure className="h-60 object-cover">
               <img src={data.image} alt="Shoes" />

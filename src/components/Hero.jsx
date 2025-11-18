@@ -17,10 +17,15 @@ import { EffectCards } from "swiper/modules";
 
 export const Hero = () => {
   return (
-    <div className=" bg-linear-to-br from-[#A4614E] via-gray-500 to-[#744437] mx-30 my-5 h-[80vh] rounded-xl text-white flex justify-center gap-20 items-center px-8">
+    <div
+      className=" bg-linear-to-br from-[#A4614E] via-gray-500 to-[#744437] mx-30 my-5 h-[80vh] rounded-xl text-white flex justify-center gap-20 items-center px-8
+                 max-sm:flex-col max-md:flex-col
+                 max-sm:justify-center max-sm:items-center
+                 max-md:justify-center max-md:items-center"
+    >
       {/* left: text */}
       <div className="max-w-md mr-8">
-        <h1 className="text-7xl font-medium mb-5 text-center">
+        <h1 className="text-7xl font-medium mb-5 text-center max-sm:text-2xl max-md:text-3xl">
           Welcome to <span className="text-orange-100">PetCare</span>
         </h1>
         <p className="text-lg text-center">
@@ -30,7 +35,7 @@ export const Hero = () => {
       </div>
 
       {/* right: swiper */}
-      <div className="w-70 h-90">
+      <div className="w-70 h-90 max-sm:w-48 max-sm:h-48 max-md:w-64 max-md:h-64">
         <Swiper
           effect={"cards"}
           grabCursor={true}

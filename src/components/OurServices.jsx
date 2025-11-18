@@ -16,11 +16,11 @@ const OurServices = ({ servicedata }) => {
         </h1>
       </div>
 
-      <div className="gap-5 grid grid-cols-3 mx-20 my-10">
+      <div className="gap-5 grid grid-cols-3 mx-20 my-10 max-md:block max-md:m-10 max-sm:block max-sm:m-10 ">
         {servicedata.map((data, index) => (
           <div
             key={index}
-            className="card bg-white text-black w-90 h-80 shadow-sm"
+            className="card bg-white text-black w-90 h-80 shadow-sm max-sm:mb-5 max-md:mb-5"
           >
             <figure className="h-60 object-cover">
               <img src={data.image} alt={data.serviceName} />

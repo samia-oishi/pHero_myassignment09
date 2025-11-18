@@ -12,6 +12,9 @@ import { ServiceDetails } from "./pages/ServiceDetails.jsx";
 import { SignUp } from "./pages/SignUp.jsx";
 import { SignIn } from "./pages/SignIn.jsx";
 import "aos/dist/aos.css";
+import PrivateRoute from "./layout/PrivateRoute.jsx";
+import { AuthProvider } from "./context/AuthContext.jsx";
+import { ForgotPassword } from "./pages/ForgotPassword.jsx";
 
 const router = createBrowserRouter([
   {
@@ -56,7 +59,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/myprofile",
-        element: <MyProfile />,
+        element: (
+          <PrivateRoute>
+            <MyProfile />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/servicedetails/:id",
@@ -65,7 +72,11 @@ const router = createBrowserRouter([
           const allserv = await res.json();
           return { allserv, id: params.id };
         },
-        element: <ServiceDetails />,
+        element: (
+          <PrivateRoute>
+            <ServiceDetails />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/signup",
@@ -75,12 +86,18 @@ const router = createBrowserRouter([
         path: "/signin",
         element: <SignIn />,
       },
+      {
+        path: "/forgot-password",
+        element: <ForgotPassword />,
+      },
     ],
   },
 ]);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </StrictMode>
 );

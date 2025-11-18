@@ -9,11 +9,11 @@ const Vet = ({ vetdata }) => {
             Meet Our <span className="text-orange-100">Expert Vets</span>
           </h1>
         </div>
-        <div className="grid grid-cols-4 gap-2 m-10">
+        <div className="grid grid-cols-4 gap-2 m-10 max-sm:block max-sm:m-17 max-md:block max-md:m-17">
           {vetdata.map((data, index) => (
             <div
               key={index}
-              className="card bg-orange-100 text-black w-72 h-70 shadow-sm"
+              className="card bg-orange-100 text-black w-72 h-70 shadow-sm max-sm:mb-5 max-md:mb-5"
             >
               <figure className="h-60 object-cover">
                 <img src={data.image} alt="Shoes" />
